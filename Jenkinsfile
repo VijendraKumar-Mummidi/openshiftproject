@@ -10,7 +10,7 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/VijendraKumar-Mummidi/openshiftproject.git'
+                git branch: 'main', url: 'https://github.com/VijendraKumar-Mummidi/openshiftproject.git'
             }
         }
 
